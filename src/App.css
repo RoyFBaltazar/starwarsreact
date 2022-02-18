@@ -24,8 +24,11 @@ img{
   width: 50%;
   opacity: 0.4;
 }
-h1{
+h1  {
   display: flex;
 justify-content: center;
 opacity: .4;
 }
+button{
+  padding: 8px 16px;
+  opacity: .6;}

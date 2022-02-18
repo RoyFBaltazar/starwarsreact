@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import NextButton from "./nextButton";
 
 const GetAllships =()=>{
 
@@ -17,6 +18,7 @@ setShips(response.data.results)
     return(
     <div>
 <h1>ships</h1>
+<NextButton ships={ships} setShips={setShips}/>
 {ships.map(ships=>{return(<div className="shipsList" key={ships.name}>
    <h3>Name: {ships.name}</h3>
     <li>cost: {ships.cost_in_credits}</li>

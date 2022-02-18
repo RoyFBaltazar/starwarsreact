@@ -20,3 +20,4 @@ The Star Wars API: https://swapi.dev/documentation
  useState
 
 
+![Screenshot_star](https://user-images.githubusercontent.com/94885352/154775411-561b36fb-3d26-437a-a917-fea44a6198ad.jpg)

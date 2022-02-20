@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const NextButton =(props)=>{
 
     const { ships , setShips} = props;
+    const [newShip, setNewShip]= useState([])
     useEffect(()=>
     axios.get('https://swapi.dev/api/starships/')
     .then(response=> {
@@ -13,16 +14,15 @@ const NextButton =(props)=>{
     .then(response=>{
 console.log(response.data.results)
 const newShips = response.data.results
-setShips(prevState=>[...newShips, ...prevState])
-console.log(newShips)
-
+setNewShip(response.data.results)
     })
     
     })
     ,[])
     const handleClick= ()=>{
-     
-        console.log(ships)
+     console.log(newShip)
+     setShips(prevState=>[...newShip, ...prevState])
+       
     }
 
     return(

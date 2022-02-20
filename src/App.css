@@ -15,8 +15,17 @@
   margin: 80px;
   padding: 50px;
   opacity: 0.75;
+  animation: fadein 3s;
   
  
+}
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: .7;
+  }
 }
 img{
   display: block;
@@ -32,4 +41,6 @@ opacity: .4;
 }
 button{
   padding: 8px 16px;
-  opacity: .6;}
+  opacity: .6;
+
+}

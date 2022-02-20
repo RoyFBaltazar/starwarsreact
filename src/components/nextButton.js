@@ -5,6 +5,9 @@ const NextButton =(props)=>{
 
     const { ships , setShips} = props;
     const [newShip, setNewShip]= useState([])
+    const [showButton, setShowButton]= useState(true)
+
+    // gets new page set url then gets new ships into state
     useEffect(()=>
     axios.get('https://swapi.dev/api/starships/')
     .then(response=> {
@@ -13,21 +16,23 @@ const NextButton =(props)=>{
     axios.get(`${newUrl}`)
     .then(response=>{
 console.log(response.data.results)
-const newShips = response.data.results
+
 setNewShip(response.data.results)
     })
     
     })
     ,[])
+    // button adds newships to state and hides button after click with a boleen
     const handleClick= ()=>{
      console.log(newShip)
      setShips(prevState=>[...newShip, ...prevState])
-       
+     setShowButton(false)
     }
 
     return(
         <div>
-            <button onClick={handleClick}>Next ships</button>
+            {/* after click button is hide */}
+            {showButton && <button onClick={handleClick}>Next ships</button>}
         </div>
     )
 }

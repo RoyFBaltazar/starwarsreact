@@ -21,3 +21,8 @@ The Star Wars API: https://swapi.dev/documentation
 
 
 ![Screenshot_star](https://user-images.githubusercontent.com/94885352/154775411-561b36fb-3d26-437a-a917-fea44a6198ad.jpg)
+
+### Upcoming Features
+Search bar to find your favorite ship
+add more data
+scroll bar 

@@ -4,6 +4,7 @@ import GetAllships from './components/sw';
 import axios from "axios";
 import { useEffect, useState } from "react";
 import NextButton from './components/nextButton';
+import Scroll from './components/scroll';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <img src='https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/b2a5e0c2-fd7e-488b-bb85-3fb550535aca'   />
-      
+     
       <GetAllships/>
 
      

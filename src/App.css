@@ -15,7 +15,7 @@
   margin: 80px;
   padding: 50px;
   opacity: 0.75;
-  animation: fadein 3s;
+ 
   
  
 }
@@ -46,12 +46,3 @@ button{
 }
 
 
-.titlecontent{
-
-  animation: scroll 20s linear 4s infinite;
-}
-
-@keyframes scroll {
-	0% { top: 100%; }
-	100% { top: -170%; }
-}

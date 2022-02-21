@@ -6,6 +6,7 @@ const NextButton =(props)=>{
     const { ships , setShips} = props;
     const [newShip, setNewShip]= useState([])
     const [showButton, setShowButton]= useState(true)
+    const [url, setUrl]= useState('')
 
     // gets new page set url then gets new ships into state
     useEffect(()=>
